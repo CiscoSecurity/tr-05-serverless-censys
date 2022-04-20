@@ -164,7 +164,6 @@ def catch_errors(func):
         except (CensysUnauthorizedException, CensysException) as error:
             raise AuthorizationError(error)
 
-
     return wraps
 
 
