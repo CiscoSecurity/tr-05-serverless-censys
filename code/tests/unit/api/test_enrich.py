@@ -102,7 +102,10 @@ def test_enrich_call_with_unauthorized_error(
 
     mock_get.return_value = \
         mock_api_response(payload=EXPECTED_RESPONSE_OF_JWKS_ENDPOINT)
-    mock_request.side_effect = [CensysUnauthorizedException(403, 'Unauthorized. You must authenticate with a valid API ID and secret.', const='unauthorized')]
+    mock_request.side_effect = [CensysUnauthorizedException(
+        403,
+        'Unauthorized. You must authenticate with a valid API ID and secret.',
+        const='unauthorized')]
 
     response = client.post('/observe/observables',
                            headers=get_headers(valid_jwt()),

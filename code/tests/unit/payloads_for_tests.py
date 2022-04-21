@@ -208,7 +208,8 @@ EXPECTED_PAYLOAD_OF_CENSYS = [
             "perspective_id": "PERSPECTIVE_HE",
             "changed_fields": [
                 {
-                    "field_name": "http.response.headers.X-Amz-Request-Id.headers"
+                    "field_name":
+                        "http.response.headers.X-Amz-Request-Id.headers"
                 },
                 {
                     "field_name": "http.response.status_reason"
@@ -220,10 +221,12 @@ EXPECTED_PAYLOAD_OF_CENSYS = [
                     "field_name": "http.response.body_size"
                 },
                 {
-                    "field_name": "http.response.headers.X-Rgw-Object-Type.headers"
+                    "field_name":
+                        "http.response.headers.X-Rgw-Object-Type.headers"
                 },
                 {
-                    "field_name": "http.response.headers.Served-In-Seconds.headers"
+                    "field_name":
+                        "http.response.headers.Served-In-Seconds.headers"
                 },
                 {
                     "field_name": "http.response.html_tags"

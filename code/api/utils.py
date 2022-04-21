@@ -13,7 +13,6 @@ from requests.exceptions import (
 )
 from censys.common.exceptions import (
     CensysUnauthorizedException,
-    CensysException,
     CensysSearchException,
 )
 
