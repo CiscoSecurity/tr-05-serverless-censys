@@ -1,6 +1,6 @@
 from functools import partial
 
-from flask import g, Blueprint, current_app
+from flask import g, Blueprint
 
 from api.client import CensysClient
 from api.mapping import Sighting
@@ -43,7 +43,8 @@ def refer_observables():
             'title': 'Events for this IP',
             'description':
                 f'Events for this {observable["type"]} in the Censys',
-            'url': f'https://search.censys.io/hosts/{observable["value"]}/events',
+            'url': f'https://search.censys.io/hosts/{observable["value"]}'
+                   '/events',
             'categories': ['Censys', 'Search', 'Events'],
         }
         for observable in observables
