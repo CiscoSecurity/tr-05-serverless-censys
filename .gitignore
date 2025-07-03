@@ -4,9 +4,16 @@
 # PyCharm
 .idea/
 
+# VsCode
+.vscode/
+
 # Python
 __pycache__/
 venv/
 
 # dotenv
 .env
+
+# tests
+.coverage
+.pytest_cache/

@@ -98,3 +98,4 @@ This application was developed and tested under Python version 3.9.
 
 - `ip`
 - `ipv6`
+
